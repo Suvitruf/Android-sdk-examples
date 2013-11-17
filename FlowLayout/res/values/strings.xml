@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlowLayout</string>
+    <string name="action_settings">Settings</string>
+    <string name="test_string">test</string>
+	<integer name="test_padding_v">15</integer>
+	<integer name="test_padding_h">10</integer>
+</resources>
