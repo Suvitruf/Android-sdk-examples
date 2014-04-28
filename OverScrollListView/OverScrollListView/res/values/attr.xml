@@ -1,0 +1,10 @@
+<resources>
+
+    <declare-styleable name="OverscrollListView">
+        <attr name="maxOverScrollDistance" format="dimension" />
+        <attr name="slowEffect" format="boolean" />
+        <attr name="animationTime" format="integer" />
+        <attr name="slowCoefficient" format="float" />
+    </declare-styleable>
+
+</resources>
