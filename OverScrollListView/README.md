@@ -2,8 +2,9 @@ SlidingMenu ([Play Store Demo][1])
 ===========
 
 An Android List View implementation with overscroll support.
-[Library][3]
-[Sample][4]
+
+* [Library][3]
+* [Sample][4]
 
 Setup
 -----
