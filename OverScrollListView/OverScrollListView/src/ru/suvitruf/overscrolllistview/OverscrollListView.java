@@ -105,6 +105,7 @@ public class OverscrollListView extends ListView {
 	private float firstY;
 	private int lastScroll = 0;
 	long historicTime;
+	private int offset = 0;
 
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -115,10 +116,25 @@ public class OverscrollListView extends ListView {
 			firstY = ev.getRawY();
 			clearColapseAnimation();
 			lastScroll = 0;
+			offset = 0;
 		} else if (ev.getAction() == MotionEvent.ACTION_MOVE) {
 
 			lastScroll = (int) (firstY - newY);
 
+
+			// fix for case when simple scroll transform to overscroll
+			if (lastScroll < 0) {
+				if(getScrollY() == 0){
+					if (getFirstVisiblePosition() == 0 && getChildAt(0) != null && getChildAt(0).getTop() == 0) {
+						offset = lastScroll;
+						lastScroll=-1;
+					}
+				}
+				else
+					lastScroll-=offset;
+					
+			}
+			
 			if(mSlowEffect){
 				if (getOverScrollYWithSlow(lastScroll) < -mMaxYOverscrollDistance)
 					lastScroll = -(int)getReverseOverScrollYWithSlow(mMaxYOverscrollDistance);
