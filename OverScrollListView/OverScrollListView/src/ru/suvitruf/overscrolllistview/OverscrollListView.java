@@ -133,7 +133,7 @@ public class OverscrollListView extends ListView {
 					lastScroll = mMaxYOverscrollDistance;
 			}
 			
-			if (lastScroll > 0) {
+			if (lastScroll < 0) {
 				if (getFirstVisiblePosition() == 0 && getChildAt(0) != null && getChildAt(0).getTop() == 0) {
 					pullDown(lastScroll, 0);
 					return true;
