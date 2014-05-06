@@ -30,5 +30,5 @@ public class SimpleOverscrollActivity extends Activity {
 	
 	
 	private String[] mStrings = {  "Ukhta", "Tomsk", "Tula","Abakan", "Raduzhny", "Moscow", "Ufa", "Volgograd",
-			"Yemva", "Makhachkala", "Kirov" , "Dobryanka" };
+			"Yemva", "Makhachkala", "Kirov" , "Dobryanka" , "Piter" , "Inta" , "Ekb" , "Vladivostok" };
 }

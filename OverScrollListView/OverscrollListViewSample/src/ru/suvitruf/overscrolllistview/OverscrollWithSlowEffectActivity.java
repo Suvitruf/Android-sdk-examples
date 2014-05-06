@@ -17,12 +17,12 @@ public class OverscrollWithSlowEffectActivity extends Activity {
 
 		mOverscrollListView = (OverscrollListView)findViewById(R.id.activity_oslv_list);
 		mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mStrings);
-		mOverscrollListView.setAdapter(mAdapter);
+		mOverscrollListView.setAdapter(mAdapter); 
 		
 	}
-	
+	           
 	
 	
 	private String[] mStrings = {  "Ukhta", "Tomsk", "Tula","Abakan", "Raduzhny", "Moscow", "Ufa", "Volgograd",
-			"Yemva", "Makhachkala", "Kirov" , "Dobryanka" };
+			"Yemva", "Makhachkala", "Kirov" , "Dobryanka" , "Piter" , "Inta" , "Ekb" , "Vladivostok" };
 }
