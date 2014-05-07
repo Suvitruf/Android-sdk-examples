@@ -59,13 +59,13 @@ public class OverscrollListView extends ListView {
 
 	public OverscrollListView(Context context) {
 		super(context);
-		initOverscrollListView();
+		
 		
 		mOverscrollDistance = MAX_Y_OVERSCROLL_DISTANCE;
 		mSlowEffect = false;
 		mAnimationTime = ANIMATION_DURATION;
 		mSlowCoefficient = SLOW_COEFFICIENT;
-
+		initOverscrollListView();
 	}
 
 	public OverscrollListView(Context context, AttributeSet attrs) {
