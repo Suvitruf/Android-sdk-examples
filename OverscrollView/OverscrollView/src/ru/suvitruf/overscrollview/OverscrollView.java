@@ -32,6 +32,8 @@ public class OverscrollView extends ScrollView {
     private static final int ANIMATION_DURATION = 300;
     private static final float SLOW_COEFFICIENT = 0.8F;
     private static final boolean HAS_SLOW_EFFECT = true;
+    static final int DELTA_ON_CLICK = 5;
+    
 
     private int mOverscrollDistance;
     private float mSlowCoefficient;
@@ -196,7 +198,12 @@ public class OverscrollView extends ScrollView {
 
             }
         } else if (ev.getAction() == MotionEvent.ACTION_UP || ev.getAction() == MotionEvent.ACTION_CANCEL) {
-            if (getScrollY() <= 0) {
+        	
+        	//onCLick
+        	if (Math.abs(lastScroll) < DELTA_ON_CLICK)
+        		return super.dispatchTouchEvent(ev);
+        	
+        	if (getScrollY() <= 0) {
                 pullUp(lastScroll, 0);
  
                 return false;
