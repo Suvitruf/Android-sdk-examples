@@ -14,7 +14,7 @@ you need, like R.java, etc.
 
 API support
 ------------------------------------------------
-OverScrollListView works fin on Android 2.3+
+OverScrollListView works fine on Android 2.3+
 
 How to Integrate this Library into Your Projects
 ------------------------------------------------
