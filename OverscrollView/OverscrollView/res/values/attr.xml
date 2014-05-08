@@ -1,0 +1,10 @@
+<resources>
+
+     <declare-styleable name="OverscrollView">
+        <attr name="oslvMaxOverScrollDistance" format="dimension"/>
+        <attr name="oslvSlowEffect" format="boolean" />
+        <attr name="oslvAnimationTime" format="integer" />
+        <attr name="oslvSlowCoefficient" format="float" />
+    </declare-styleable>
+
+</resources>
