@@ -1,7 +1,7 @@
 OverscrollView 
 ===========
 
-An ScrollView implementation with overscroll support.
+An Android ScrollView implementation with overscroll support.
 
 * [Library][3]
 
