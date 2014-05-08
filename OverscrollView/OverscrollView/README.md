@@ -27,7 +27,7 @@ Write in your layout.xml file something like this:
         android:scrollbars="vertical"
         android:overScrollMode="always" >
         ...
-        </ru.suvitruf.overscrollview.OverscrollView>
+    </ru.suvitruf.overscrollview.OverscrollView>
 ```
 * `animationTime` - duration of collapse animation time.
 * `maxOverScrollDistance` - max distance of overscroll.
