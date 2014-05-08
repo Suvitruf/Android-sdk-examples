@@ -20,14 +20,14 @@ How to Integrate this Library into Your Projects
 Write in your layout.xml file something like this:
 
 ```xml
-    <ru.suvitruf.OverscrollView
+    <ru.suvitruf.overscrollview.OverscrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fadingEdge="none"
         android:scrollbars="vertical"
         android:overScrollMode="always" >
         ...
-        </ru.suvitruf.OverscrollView>
+        </ru.suvitruf.overscrollview.OverscrollView>
 ```
 * `animationTime` - duration of collapse animation time.
 * `maxOverScrollDistance` - max distance of overscroll.
