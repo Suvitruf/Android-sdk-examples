@@ -21,4 +21,4 @@
 
 ```
 
-[Suvitruf](http://suvitruf.ru/2013/11/17/3396/[)
+[Suvitruf](http://suvitruf.ru/2013/11/17/3396/)
