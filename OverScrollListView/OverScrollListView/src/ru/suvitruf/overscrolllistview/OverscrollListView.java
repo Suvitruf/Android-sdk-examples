@@ -126,6 +126,10 @@ public class OverscrollListView extends ListView {
 
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
+		
+		// no need when no childs
+		if(getChildCount() == 0)
+			return super.dispatchTouchEvent(ev);
 		float newY = ev.getRawY();
 		
 		if (ev.getAction() == MotionEvent.ACTION_DOWN) {
